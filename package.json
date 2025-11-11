@@ -1,0 +1,22 @@
+{
+  "name": "prodgect",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel ./src/html/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iwan20131202/project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iwan20131202/project/issues"
+  },
+  "homepage": "https://github.com/iwan20131202/project#readme",
+  "dependencies": {
+    "parcel": "^2.16.1"
+  }
+}

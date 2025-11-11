@@ -1,13 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>probgect</title>
-</head>
-<body>
-    
-    <script src="../js/information.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PROJECT</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <div class="search">
+          <form class="search-form">
+            <label class="search-seach">
+              <input
+                id="search-game"
+                type="search"
+                placeholder="Search"
+                data-search
+              />
+            </label>
+            
+          </form>
+        </div>
+        <div class="ganre" data-filter>
+          <h2 class="header-title">Genre</h2>
+          <ul class="ganre-list">
+            <li class="ganre-item">
+              <button class="ganre-button" data-ganre="RPG">RPG</button>
+            </li>
+            <li class="ganre-item">
+              <button class="ganre-button" data-ganre="Action‑Adventure">Action‑Adventure</button>
+            </li>
+            <li class="ganre-item">
+              <button class="ganre-button" data-ganre="Action">Action</button>
+            </li>
+            <li class="ganre-item">
+              <button class="ganre-button" data-ganre="Sandbox / Survival">
+                Sandbox / Survival
+              </button>
+            </li>
+            <li class="ganre-item">
+              <button class="ganre-button" data-ganre="point and click">point and click </button>
+            </li>
+            <li class="ganre-item">
+              <button class="ganre-button" data-ganre="Narrative adventure">Narrative adventure </button>
+            </li>
+            <li class="ganre-item">
+              <button class="ganre-button" data-ganre="Visual Novel">Visual Novel</button>
+            </li>
+            <li class="ganre-item">
+              <button class="ganre-button" data-ganre="Party‑режими">
+               Party‑режими
+              </button>
+            </li>
+            <li class="ganre-item">
+              <button class="ganre-button" data-ganre="відкритий світ">
+                відкритий світ
+              </button>
+            </li>
+            <li class="ganre-item">
+              <button class="ganre-button" data-ganre="Гонки (Racing)">Гонки (Racing)</button>
+            </li>
+            
+          </ul>
+        </div>
+        <div class="sort">
+          <select name="sort" id="sort" data-sort>
+            <option disabled selected>Sort by</option>
+            <option value="year">Рік</option>
+            <option value="rating">Оцінка</option>
+          </select>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="games">
+        <div class="container">
+          <div class="games-container" data-games></div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="../js/main.js"></script>
+  </body>
 </html>
