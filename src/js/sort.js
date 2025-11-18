@@ -1,9 +1,9 @@
 export const sortGames = (games, query) => {
   const sortedGames = [...games].sort((a, b) => {
     if (query === "rating") {
-      return b.rating - a.rating;
+      return b.CurrentRatingsReviews - a.CurrentRatingsReviews;
     } else if (query === "year") {
-      return b.year - a.year;
+      return b.ReleaseDateExpected - a.ReleaseDateExpected;
     }
   });
   return sortedGames;

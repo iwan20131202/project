@@ -1,14 +1,11 @@
-
 import games from "./data.js";
 import { renderMovies } from "./render-games.js";
 import { filterByGenre } from "./filter-genre.js";
 import { searchGame } from "./search.js";
 import { sortGames } from "./sort.js";
 
-
 const gamesContainer = document.querySelector("[data-games]");
 renderMovies(games, gamesContainer);
-
 
 const filterByGenreButton = document.querySelector("[data-filter]");
 const hendleFilter = (event) => {
@@ -20,7 +17,6 @@ const hendleFilter = (event) => {
 };
 
 filterByGenreButton.addEventListener("click", hendleFilter);
-
 
 // SEARCH ================= START
 const input = document.querySelector("[data-search]");
@@ -45,5 +41,3 @@ const handleSort = (event) => {
 };
 
 select.addEventListener("change", handleSort);
-
-
